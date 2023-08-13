@@ -2,27 +2,25 @@
 var numberOfDrumButoons=document.querySelectorAll(".drum").length;
 
 for(var i=0 ; i<numberOfDrumButoons ; i++)
-{
-    
+{    
     document.querySelectorAll(".drum")[i].addEventListener("click",function()
     {
-        var buttonInnerHTML=this.innerHTML;
+        var buttonInnerHTML=this.innerHTML;     // this.innerHTML = w a s d j k l
         makesound(buttonInnerHTML);
 
         buttonAnimation(buttonInnerHTML);
-    });
-    
+    });    
 }
+
 // detecting keyboard press
 document.addEventListener("keypress",function(event)
 {
-    makesound(event.key)
+    makesound(event.key);       // event.key = w a s d j k l
 
-    buttonAnimation(event.key);
+    buttonAnimation(event.key); 
 });
 
 
-// this fxn is called accordingly whether a key is pressed or a click
 function makesound(key)
 {
     switch (key)
@@ -61,17 +59,16 @@ function makesound(key)
             var kick=new Audio('sounds/kick-bass.mp3');
             kick.play();
             break;
-
     }
 }
 
 function buttonAnimation(currentkey)
 {
-    var activeButton=document.querySelector("."+currentkey);
+    var activeButton=document.querySelector("."+currentkey);    // "." + "w a s d j k l"
     activeButton.classList.add("pressed");
 
     setTimeout(function()
     {
         activeButton.classList.remove("pressed");
-    },100);
+    },100); // after a delay of 100
 }
