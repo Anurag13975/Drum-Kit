@@ -1,6 +1,8 @@
 body {
   text-align: center;
   background-color: #283149;
+  background-image: url("https://media.istockphoto.com/id/1076840920/vector/music-background.jpg?s=612x612&w=0&k=20&c=bMG2SEUYaurIHAjtRbw7bmjLsXyT7iJUvAM5HjL3G3I=");
+  width: 100%;
 }
 
 h1 {
@@ -9,6 +11,11 @@ h1 {
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
 
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
 }
 
 .w {
@@ -42,11 +49,6 @@ h1 {
 
 .set {
   margin: 10% auto;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
 }
 
 .pressed {
